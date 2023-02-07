@@ -1,4 +1,42 @@
-body, html {
-  margin: 0;
-  padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Satisfy&display=swap');
+
+body {
+  font-family: 'Courgette', cursive;
+  background-color: black;
+  }
+
+  div {
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    padding: 13%;
+  }
+
+  button {
+    width: 90px;
+    height: 60px;
+    font-size: 25px;
+    background-color:#b23f3f;
+    border-radius: 50%;
+    color: honeydew;
+    font-family: 'Courgette', cursive;
+  }
+
+  button:hover {
+    background-color: #ab7a7a;
+  }
+
+  h1 {
+    font-size: 25px;
+    color: honeydew;
+    background-color: #b23f3f;
+    border: black solid 2px;
+    border-radius: 5px;
+    text-align: center;
+    padding : 3%;
+  }
+
+  h1:hover{
+    background-color:  #ab7a7a;
+  }
+
