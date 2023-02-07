@@ -25,7 +25,7 @@ minusButton.addEventListener("click", function () {
 // on recupere le bouton reset dans une constante
 const resetButton = document.querySelector(".reset");
 
-////on ajoute une fonction au click sur le boutton reset qui remet le compteur a 0 a chaque fois qu'on clique
+////on ajoute une fonctions au click sur le boutton reset qui remet le compteur a 0 a chaque fois qu'on clique
 resetButton.addEventListener("click", function () {
     count = 0;
     document.querySelector(".counter").innerHTML = count;
