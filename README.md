@@ -37,3 +37,4 @@ Une fois votre travail terminé, vous allez devoir push votre branche et réalis
 > Des commentaires vous serons ajouter sur le pull request, il faudra corriger les erreurs mis en commentaires.
 
 > Vous pouvez travailler en équipe, il faudra donner à votre formateur la personne sur github réalisant la pull request
+T
