@@ -1,47 +1,79 @@
+:root {
+  --bg-color: rgb(214, 185, 241);
+  --color: rgb(87, 11, 230);
+  --font-weight: 700;
+  --flex: flex;
+  --raduis: 10px;
+  --wth: 5rem;
+  --heht: 3rem;
+  --rem: 2rem;
+}
+
 body,
 html {
+  background-color: blueviolet;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  display: flex;
+  display: var(--flex);
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-width: 100vw;
   min-height: 100vh;
 }
+
 .main {
-  background-color: #f6f664;
-  border-radius: 50%;
+  background-color: #a775ec;
+  border-radius: 10px;
   padding: 4rem;
 }
+
 .btn {
-  display: flex;
+  display: var(--flex);
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  margin: var(--rem);
 }
 
-h1 {
+p,
+.text {
   text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 2rem;
+  font-size: var(--rem);
+  font-weight: var(--font-weight);
+  margin: var(--rem);
 }
 
 .counter {
-  color: rgb(87, 11, 230);
-  background-color: rgb(214, 185, 241);
-  border-radius: 50%;
-  padding: 1rem;
+  color: var(--color);
+  background-color: var(--bg-color);
+  border-radius: var(--raduis);
+  padding: 1rem 2rem;
 }
 
 button {
-  margin: 0.8rem;
-  padding: 0.8rem;
+  width: var(--wth);
+  height: var(--heht);
+  margin: 0.5rem;
+  padding: 1rem;
   border: none;
-  border-radius: 5px;
+  border-radius: var(--raduis);
   cursor: pointer;
-  font-weight: 700;
+  font-weight: var(--font-weight);
   font-size: 1.2rem;
+  background-color: var(--bg-color);
+}
+
+.nombre {
+  width: var(--wth);
+  height: var(--heht);
+  text-align: center;
+  align-items: center;
+  border: none;
+  border-radius: var(--raduis);
+  font-weight: var(--font-weight);
+  font-size: 1.5rem;
+  background-color: var(--bg-color);
+  color: var(--color);
 }

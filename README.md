@@ -1,4 +1,4 @@
-# Exercice du compteur
+# Mon Projet avec git & github
 
 L'objectif de l'exercice et d'utiliser html, css et javascript pour créer un compteur interractif.
 
