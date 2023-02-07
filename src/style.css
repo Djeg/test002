@@ -81,3 +81,22 @@ p {
   line-height: 32px;
   margin: 0 0 24px;
 }
+
+
+input{
+  display: inline-block;
+  background-color: var(--colorButton);
+  border-radius: 10px;
+  border: 4px double var(--light);
+  color: #eeeeee;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  cursor: pointer;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  
+
+}

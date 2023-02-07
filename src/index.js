@@ -5,10 +5,19 @@ const valeurCompteur = document.querySelector('.counter')
 document.querySelector('.plus').addEventListener('click', compteurPlus)
 
 let compteur = 0
+
+const input = document.querySelector('.ajouter')
+
 //Ajouter la fonction compteur plus
 function compteurPlus() {
-  compteur += 1
-  valeurCompteur.innerHTML = compteur
+  if (input.value != ' ') {    
+    compteur += parseFloat(input.value)
+    valeurCompteur.innerHTML = compteur    
+  }  
+ else {
+    compteur += 1
+    valeurCompteur.innerHTML = compteur
+  }
 }
 
 //créer un événement au buton + minus
@@ -16,11 +25,21 @@ document.querySelector('.minus').addEventListener('click', compteurMinus)
 // créer la fonction compteurMinus
 function compteurMinus() {
   if (compteur <= 0) {
-    compteur = 0
-    valeurCompteur.innerHTML = compteur
+    compteurReset() 
   } else {
-    compteur -= 1
-    valeurCompteur.innerHTML = compteur
+    if (input.value != ' ') {
+      compteur -= parseFloat(input.value)
+      if (compteur<= 0)
+      {
+        compteurReset() 
+      }
+      else{
+         valeurCompteur.innerHTML = compteur
+        }
+    } else {
+      compteur -= 1
+      valeurCompteur.innerHTML = compteur
+    }
   }
 }
 
