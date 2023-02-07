@@ -3,109 +3,106 @@
 */
 :root {
   /* constant value from the web coolors.co  */
-   --almond: #ede0d4ff;
-   --desert-sand: #e6ccb2ff;
-   --burlywood: #ddb892ff;
-   --cafe-au-lait: #b08968ff;
-   --coffee: #7f5539ff;
-   --brown-sugar: #9c6644ff;
- 
-   /* constant color used  */
-   --dark: var(--coffee);
-   --less-dark: var(--cafe-au-lait);
-   --more-light: var(--desert-sand);
-   --light: var(--almond);
- }
- 
- 
- 
- body, html {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-  
-   width: 100vw;
-   height: 100vh;
-   color: var(--light);
-   background-color: var(--dark);
- }
- /* ---------------------------------------------------------------------- */
- /**
+  --almond: #ede0d4ff;
+  --desert-sand: #e6ccb2ff;
+  --burlywood: #ddb892ff;
+  --cafe-au-lait: #b08968ff;
+  --coffee: #7f5539ff;
+  --brown-sugar: #9c6644ff;
+
+  /* constant color used  */
+  --dark: var(--coffee);
+  --less-dark: var(--cafe-au-lait);
+  --more-light: var(--desert-sand);
+  --light: var(--almond);
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  width: 100vw;
+  height: 100vh;
+  color: var(--light);
+  background-color: var(--dark);
+}
+/* ---------------------------------------------------------------------- */
+/**
  *  main functionality for the project 
  */
- .main-container{
- 
-   width: 100%;
-   height: 100%;
-   background-color: var(--less-dark);
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
- 
- }
- 
- /* ---------------------------------------------------------------------- */
- /* display the value  */
- 
- .counter{
-   width: 200px;
-   height: 100px;
-   background-color:var(--light);
-   font-size: 3em;
- }
- 
- .input-container {
-  width: 200px;
-
+.main-container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--less-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
- .input-increment {
+
+/* ---------------------------------------------------------------------- */
+/* display the value  */
+
+.counter {
+  width: 50%;
+  height: 50%;
+  background-color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  width: 50%;
+  height: 10%;
+}
+.input-increment {
   width: fit-content;
   border-radius: 10px 10px 0px 0px;
-  width: 192px;
-  height: 20px;
-  outline:0;
+  width: 100%;
+  height: 100%;
 
+  outline: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  text-align: center;
+}
 
- }
- 
- .counter-display{
-   text-align: center;
-   color: var(--dark);
- 
- }
- 
- 
- /* ---------------------------------------------------------------------- */
- /* contain 3 button, inc, dec and reset  */
- .button-container{
-   width: 200px;
-   height: 40px;
-   display: flex;
-   flex-direction:row;
-   justify-content:space-between;
- }
- 
- /* common properties for the 3 buttons */
- .button{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 30%;
-   height: 100%;
-   cursor: pointer;
-   background-color:var(--more-light);
-   color: var(--dark);
- 
- }
- 
+.counter-display {
+  color: var(--dark);
+  font-size: 3em;
+}
 
- .increment{
-  border-radius:0px 0px 0px  10px ;
+/* ---------------------------------------------------------------------- */
+/* contain 3 button, inc, dec and reset  */
+.button-container {
+  width: 50%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
- }
+/* common properties for the 3 buttons */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32%;
+  height: 100%;
+  cursor: pointer;
+  background-color: var(--more-light);
+  color: var(--dark);
+}
 
- .decrement{
-  border-radius:0px 0px  10px 0px  ;
+.increment {
+  border-radius: 0px 0px 0px 10px;
+}
 
- }
+.decrement {
+  border-radius: 0px 0px 10px 0px;
+}
