@@ -3,6 +3,7 @@
 :root {
   --light: #cccccc;
   --dark: #392a47;
+  --colorButton:#7b38d8;
 
   font-size: 18px;
   font-family: 'Poppins', sans-serif;
@@ -22,54 +23,43 @@ html {
 
 .minus {
   display: inline-block;
-  background-color: #7b38d8;
+  background-color: var(--colorButton);
   border-radius: 10px;
-  border: 4px double #cccccc;
+  border: 4px double var(--light);
   color: #eeeeee;
   text-align: center;
   font-size: 28px;
   padding: 20px;
   width: 200px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
+  
 }
 
 .plus {
   display: inline-block;
-  background-color: #7b38d8;
+  background-color: var(--colorButton);
   border-radius: 10px;
-  border: 4px double #cccccc;
+  border: 4px double var(--light);
   color: #eeeeee;
   text-align: center;
   font-size: 28px;
   padding: 20px;
   width: 200px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
 }
 
 .reset {
   display: inline-block;
-  background-color: #7b38d8;
+  background-color: var(--colorButton);
   border-radius: 10px;
-  border: 4px double #cccccc;
+  border: 4px double var(--light);
   color: #eeeeee;
   text-align: center;
   font-size: 28px;
   padding: 20px;
   width: 200px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
 }
