@@ -1,4 +1,29 @@
-body, html {
-  margin: 0;
-  padding: 0;
+body {
+  display:block;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+ 
+button {
+  padding: 1em 1.5em;
+  font-size: 1.2em;
+  border-radius: 5px;
+  background-color: hotpink;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 1em;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.counter {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0 1em;
 }
