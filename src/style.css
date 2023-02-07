@@ -1,4 +1,32 @@
-body, html {
+ body, html {
   margin: 0;
-  padding: 0;
+  padding: 0;  
+}
+.container {
+  background: #72b043;
+  text-align: center;  
+  width: 30%;
+  margin: 9rem auto;
+  padding: 0.8rem 1rem 2rem;
+}
+button {
+  background-color: #4d8b42;
+  border-radius: 1rem;
+  border: none;
+  color: white;
+  padding: 5px 18px;;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+h1{
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'Poppins', sans-serif;
 }
