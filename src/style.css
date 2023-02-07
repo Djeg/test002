@@ -3,6 +3,12 @@ html {
   margin: 0;
   padding: 0;
 }
+.number {
+  width: 80px;
+  margin: 0 auto;
+  padding: 10px;
+  display: block;
+}
 .container1{
   display: flex;
   justify-content: center;
