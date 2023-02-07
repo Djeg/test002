@@ -14,19 +14,19 @@ let cpt = 0
 
 //  fonction d'adittion
 function fplus(){ 
-    return cpt += 1
+    return fcpt += 1
 }
 
 //  fonction de soustraction
-function fminus(cpt){
-    if (cpt != 0) 
-        cpt -= 1
-    return cpt 
+function fminus(fcpt){
+    if (fcpt != 0) 
+        fcpt -= 1
+    return fcpt 
 }
 
 //  fonction de remise a zero
 function freset() {
-    return cpt = 0
+    return fcpt = 0
 }
 
 //-----------------------------------------------
