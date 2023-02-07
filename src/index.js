@@ -1,33 +1,41 @@
 
-// on declare une variable count et on met le compteur à 0 
+
 let count = 0;
 
-// on recupere le boutton plus dans une constante
+const nbrInput = document.querySelector('.number');
 const plusButton = document.querySelector(".plus");
 
-//on ajoute une fonction au click sur le boutton + qui incrèmente de 1 a chaque fois qu'on clique
-plusButton.addEventListener("click", function () {
-    count++;
-    document.querySelector(".counter").innerHTML = count;
-});
+if (nbrInput && plusButton) {
+    plusButton.addEventListener("click", () => {
+        const nbr = nbrInput.value;
+        const amount = parseInt(nbr, 10) || 1;
+        count += amount;
+        document.querySelector(".counter").innerHTML = count;
+    });
+}
 
 // on recupere le boutton moins dans une constante
 const minusButton = document.querySelector(".minus");
 //on ajoute une fonction au click sur le boutton - qui decrèmente de 1 a chaque fois qu'on clique
-minusButton.addEventListener("click", function () {
-    if (count > 0) {
-        count--;
+if (nbrInput && minusButton) {
+    minusButton.addEventListener("click", () => {
+        const nbr = nbrInput.value;
+        const amount = parseInt(nbr, 10) || 1;
+        if (count > 0) {
+            count -= amount;
+        }
+        if (count < 0) {
+            count = 0;
+        }
         document.querySelector(".counter").innerHTML = count;
-    }
-
-
-});
+    });
+}
 
 // on recupere le bouton reset dans une constante
 const resetButton = document.querySelector(".reset");
 
 ////on ajoute une fonction au click sur le boutton reset qui remet le compteur a 0 a chaque fois qu'on clique
-resetButton.addEventListener("click", function () {
+resetButton.addEventListener("click", () => {
     count = 0;
     document.querySelector(".counter").innerHTML = count;
 });

@@ -68,3 +68,10 @@ html {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
+.number {
+  width: 80px;
+  margin: 0 auto;
+  padding: 10px;
+  display: block;
+}
