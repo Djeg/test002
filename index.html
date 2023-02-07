@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-     <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="./src/image/favicon.jpg" />
     <link rel="stylesheet" href="./src/style.css" />
-    <script src="https://kit.fontawesome.com/ae8c80e6d0.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Compteur</title>
   </head>
   <body>
     <div class="main-container">
-
+      <div class="input-container">
+        <!-- minimum value must be positive -->
+        <input type="number" class="input-increment" min="0" />
+      </div>
+      <!-- where result is displayer -->
       <div class="counter">
         <p class="counter-display"></p>
       </div>
+      <!-- container with 3 button plus, minus, reset -->
       <div class="button-container">
-        <div class="button increment"><i class="fa-solid fa-arrow-up"></i></i></div>
-        <div class="button reset">  <i class="fa-solid fa-arrows-rotate"></i></div>
-        <div class="button decrement"> <i class="fa-solid fa-arrow-down"></i></div>
+        <div class="button increment">
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="button reset">
+          <i class="fa-solid fa-arrows-rotate"></i>
+        </div>
+        <div class="button decrement">
+          <i class="fa-solid fa-minus"></i>
+        </div>
       </div>
     </div>
     <script type="module" src="./src/index.js"></script>
