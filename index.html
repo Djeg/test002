@@ -8,10 +8,18 @@
     <title>Mon Site Web</title>
   </head>
   <body>
-    <button class="minus">-</button>
-    <button class="plus">+</button>
-    <button class="reset">reset</button>
-    <p>Le compteur est a : <span class="counter">0</span></p>
+    <div class="content">
+      <div class="button">
+        <button class="minus">-</button>
+        <button class="plus">+</button>
+        <button class="reset">Reset</button>
+        <div class="valeur">
+          <p>Valeur de l'incrément :</p>
+          <input class="input" type="number" min = 1 value = 1>
+        </div>
+      </div>
+      <p><span class="counter">0</span></p>
+    </div>
     <script type="module" src="./src/index.js"></script>
   </body>
 </html>
