@@ -1,25 +1,25 @@
-const counterEl = document.querySelector('.counter')
-const plusBtn = document.querySelector('.plus')
-const minusBtn = document.querySelector('.minus')
-const resetBtn = document.querySelector('.reset')
+const counter = document.querySelector('.counter')
+const incrementInput = document.querySelector('.increment-input')
+const plusButton = document.querySelector('.plus')
+const minusButton = document.querySelector('.minus')
+const resetButton = document.querySelector('.reset')
+
 let count = 0
 
-// Indentation
-plusBtn.addEventListener('click', function () {
-  count++
-  counterEl.innerHTML = count
+plusButton.addEventListener('click', () => {
+  count += parseInt(incrementInput.value)
+  counter.innerHTML = count
 })
 
-// Désindentation
-minusBtn.addEventListener('click', function () {
-  if (count > 0) {
-    count--
-    counterEl.innerHTML = count
+minusButton.addEventListener('click', () => {
+  count -= parseInt(incrementInput.value)
+  if (count < 0) {
+    count = 0
   }
+  counter.innerHTML = count
 })
 
-// Remise à zéro
-resetBtn.addEventListener('click', function () {
+resetButton.addEventListener('click', () => {
   count = 0
-  counterEl.innerHTML = count
+  counter.innerHTML = count
 })
