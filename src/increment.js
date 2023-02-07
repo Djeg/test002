@@ -2,7 +2,7 @@
 let compteur = 0
 
 //Incrémente et décrémente le compteur en fonction du bouton appuyé
-export function operation(increment = false, decremente = false, reset = false){
+export function operation(increment = false, decremente = false, reset = false, valeurIncrement = 1){
     const display = document.querySelector('.counter')
 
     if(reset){
@@ -12,13 +12,13 @@ export function operation(increment = false, decremente = false, reset = false){
     }
 
     if(increment){
-        compteur += 1
+        compteur += parseInt(valeurIncrement)
         display.innerText = compteur
         return
     }
 
     if(decremente){
-        compteur -= 1
+        compteur -= parseInt(valeurIncrement)
         if(compteur <= 0){
             compteur = 0
         }
