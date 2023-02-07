@@ -13,7 +13,7 @@
 
 .minus{
   height: 10vh;
-  width: 10vh;
+  width: 5vw;
   border: none;
   border-radius: 50%;
   font-size: 4vh;
@@ -21,7 +21,7 @@
 
 .plus{
   height: 10vh;
-  width: 10vh;
+  width: 5vw;
   border: none;
   border-radius: 50%;
   font-size: 4vh;
@@ -31,7 +31,7 @@
 
 .reset{
   height: 10vh;
-  width: 20vh;
+  width: 10vw;
   border: none;
   border-radius: 20%;
   font-size: 4vh;
