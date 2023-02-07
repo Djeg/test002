@@ -20,7 +20,9 @@ function iplus () {
 
 //  Function de soustraction
 function dmoin () {
-    cpt -= 1
+    if(cpt>=1){
+     cpt -= 1
+    }
     return cpt
 }
 
