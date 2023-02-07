@@ -1,4 +1,65 @@
-body, html {
-  margin: 0;
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Satisfy&display=swap');
+
+body {
+  font-family: 'Courgette', cursive;
+  background-color: #d5c7b4;
+  }
+
+  div {
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    padding: 13%;
+  }
+
+  button {
+    width: 90px;
+    height: 60px;
+    font-size: 30px;
+    background-color:#b23f3f;
+    border-radius: 50%;
+    color: honeydew;
+    font-family: 'Courgette', cursive;
+  }
+
+  button:hover {
+    background-color: #ab7a7a;
+  }
+
+  h1 {
+    font-size: 30px;
+    color: honeydew;
+    background-color: #b23f3f;
+    border: black solid 2px;
+    border-radius: 5px;
+    text-align: center;
+    padding : 3%;
+  }
+
+  h1:hover{
+    background-color:  #ab7a7a;
+  }
+
+  .clickAnim {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(to top, #ab7a7a, #b23f3f);
+    position: absolute;
+    z-index: 9000;
+    transform: scale(0);
+    transform-origin: center;
+    animation: clickAnim 1s ease-in-out;
+}
+@keyframes clickAnim {
+    0% {
+        transform: scale(0);
+    }
+    10% {
+        transform: scale(2);
+        opacity: 1;
+    }
+    0% {
+        transform: scale(0);
+    }
 }
