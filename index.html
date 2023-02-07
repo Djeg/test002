@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8" />
+     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./src/image/favicon.jpg" />
     <link rel="stylesheet" href="./src/style.css" />
-    <title>Mon Site Web</title>
+    <script src="https://kit.fontawesome.com/ae8c80e6d0.js" crossorigin="anonymous"></script>
+    <title>Compteur</title>
   </head>
   <body>
-    <button class="minus">-</button>
-    <button class="plus">+</button>
-    <button class="reset">reset</button>
-    <p>Le compteur est a : <span class="counter">0</span></p>
+    <div class="main-container">
+
+      <div class="counter">
+        <p class="counter-display"></p>
+      </div>
+      <div class="button-container">
+        <div class="button increment"><i class="fa-solid fa-arrow-up"></i></i></div>
+        <div class="button reset">  <i class="fa-solid fa-arrows-rotate"></i></div>
+        <div class="button decrement"> <i class="fa-solid fa-arrow-down"></i></div>
+      </div>
+    </div>
     <script type="module" src="./src/index.js"></script>
   </body>
 </html>
