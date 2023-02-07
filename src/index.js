@@ -3,7 +3,7 @@
 //-----------------------------------------------
 
 const plus = document.querySelector('.plus')
-const moin = document.querySelector('.minus')
+const moins = document.querySelector('.minus')
 const raz = document.querySelector('.reset')
 const span = document.querySelector('.counter')
 let cpt = 0
@@ -42,7 +42,7 @@ plus.addEventListener('click', () => {
   })
 
 //  Ajout de l'evenement sur le moin et maj du cpt
-moin.addEventListener('click', () => {
+moins.addEventListener('click', () => {
     console.log('minus')
     cpt = fminus(cpt)
     console.log(cpt)

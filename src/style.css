@@ -1,4 +1,46 @@
-body, html {
+html, body {
   margin: 0;
   padding: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #733aac;
+}
+
+.reset{
+  width: 100px;
+  height: 50px;
+  background-color: #572b82;
+  border-radius: 15%;
+  border-color: #00000019;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+div button {
+  margin: 10px;
+  width: 75px;
+  height: 45px;
+  background-color: #572b82;
+  border-radius: 20%;
+  border-color: #00000019;
+  display: flex;
+  display:inline-block;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
 }
