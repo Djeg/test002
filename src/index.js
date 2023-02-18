@@ -34,7 +34,7 @@ function reset () {
 
 //-----------------------------------------------
 // Main Code
-//-----------------------------------------------
+
 
 //  Ajout de l'evenement sur le plus et maj du cpt
 plus.addEventListener('click',()=>{
