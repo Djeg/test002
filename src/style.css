@@ -1,79 +1,152 @@
 :root {
-  --bg-color: rgb(214, 185, 241);
-  --color: rgb(87, 11, 230);
-  --font-weight: 700;
-  --flex: flex;
-  --raduis: 10px;
-  --wth: 5rem;
-  --heht: 3rem;
-  --rem: 2rem;
+  --font: 'Press Start 2P', sans-serif;
+  --primary: rgba(241, 127, 41, 1);
+  --primary-soft: rgba(241, 127, 41, 0.1);
+  --secondary: #291100;
+
+  font-family: var(--font);
+  font-size: 18px;
 }
 
-body,
-html {
-  background-color: blueviolet;
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    font-size: 24px;
+  }
+}
+
+html,
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  display: var(--flex);
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background-color: var(--secondary);
   min-width: 100vw;
   min-height: 100vh;
-}
-
-.main {
-  background-color: #a775ec;
-  border-radius: 10px;
-  padding: 4rem;
-}
-
-.btn {
-  display: var(--flex);
-  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
-  margin: var(--rem);
+  flex-direction: column;
+  background-image: url(./img/backgroung.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-p,
-.text {
-  text-align: center;
-  font-size: var(--rem);
-  font-weight: var(--font-weight);
-  margin: var(--rem);
+* {
+  box-sizing: border-box;
 }
 
-.counter {
-  color: var(--color);
-  background-color: var(--bg-color);
-  border-radius: var(--raduis);
-  padding: 1rem 2rem;
+@keyframes mainAnim {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  80% {
+    transform: scale(1.3);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
-button {
-  width: var(--wth);
-  height: var(--heht);
-  margin: 0.5rem;
+.main-container {
+  background-color: var(--primary-soft);
+  backdrop-filter: blur(4px);
   padding: 1rem;
-  border: none;
-  border-radius: var(--raduis);
-  cursor: pointer;
-  font-weight: var(--font-weight);
-  font-size: 1.2rem;
-  background-color: var(--bg-color);
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: mainAnim 0.5s 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  transform: scale(0);
 }
 
-.nombre {
-  width: var(--wth);
-  height: var(--heht);
-  text-align: center;
+.counter-container {
+  display: flex;
+  padding: 0.6rem 0;
   align-items: center;
-  border: none;
-  border-radius: var(--raduis);
-  font-weight: var(--font-weight);
-  font-size: 1.5rem;
-  background-color: var(--bg-color);
-  color: var(--color);
+}
+
+.button {
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-size: 1rem;
+  font-family: var(--font);
+  border: 0;
+  padding: 0.6rem 1.2rem;
+  outline: 0;
+  border-radius: 5px;
+  border: 1px solid var(--secondary);
+  transition: all 0.25s;
+  cursor: pointer;
+  transform: scale(1);
+}
+.button:hover {
+  transform: scale(1.2);
+}
+
+.amount {
+  padding: 1rem;
+  color: var(--primary);
+}
+
+@keyframes incrementAnim {
+  0% {
+    max-height: 0;
+  }
+
+  100% {
+    max-height: 1000px;
+  }
+}
+
+.increment-container {
+  position: fixed;
+  max-height: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  backdrop-filter: blur(4px);
+  padding: 0rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  animation: incrementAnim 0.5s 1.5s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+
+@media screen and (max-height: 500px) {
+  .increment-container {
+    position: relative;
+    margin: 0.8rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: var(--primary-soft);
+  }
+}
+
+.title {
+  color: var(--primary);
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
 }

@@ -4,22 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <!-- app css -->
     <link rel="stylesheet" href="./src/style.css" />
-    <title>Mon Site Compteur</title>
+    <title>Compteur</title>
   </head>
+
   <body>
-    <div class="main">
-      <div>
-        <p>Compteur est à : <span class="counter">0</span></p>
-        <label for="number" class="text">Incrément:</label>
-        <input type="number" id="number" class="nombre" />
+    <!-- Main container for the counter app -->
+    <h1 class="title">Counter</h1>
+    <div class="main-container">
+      <div class="counter-container">
+        <button class="button minus">-</button>
+        <p class="amount counter">0</p>
+        <button class="button plus">+</button>
       </div>
-      <div class="btn">
-        <button class="minus">-</button>
-        <button class="plus">+</button>
-        <button class="reset">Reset</button>
-      </div>
+      <button class="button reset">Reset</button>
     </div>
+
+    <!-- The little windows at the bottom right for specifing increments -->
+    <div class="increment-container">
+      <button class="button minus">-</button>
+      <p class="amount increment">1</p>
+      <button class="button plus">+</button>
+    </div>
+
     <script type="module" src="./src/index.js"></script>
   </body>
 </html>
