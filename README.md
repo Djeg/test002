@@ -8,7 +8,10 @@ L'objectif de l'exercice et d'utiliser html, css et javascript pour créer un co
 2. Changer de branche pour la branche `compteur` (si cette branche n'est pas présente, rendez-vous dans l'onglet source de controle, puis les trois petits points puis `fetch`)
 3. Créer votre branche avec au moins votre nom d'utilisateur
 4. Installer les dépendances avec la commande : `npm i`
-5. Demarrer parcel avec la commande : `npx parcel index.html`
+
+## Run
+
+Demarrer parcel avec la commande : `npx parcel index.html`
 
 ## Le cahier des charges
 
